@@ -1,18 +1,33 @@
 @import 'fonts.css';
 
 /* Global Styles */
+/* 
+GSW: RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+
+An RGBA color value is specified with:
+
+rgba(red, green, blue, alpha)
+
+Useful slider here to get color: https://www.w3schools.com/css/css_colors_rgb.asp
+RGBA
+https://rgbacolorpicker.com/
+RGB
+https://htmlcolorcodes.com/color-picker/
+ */
+
+
 :root {
   --heading-color: rgb(29, 31, 32);
   --text-color: rgba(29, 31, 32, .85);
   --text-color-faded: rgb(29, 31, 32, 0.5);
-  --primary-color: rgb(156, 213, 56);
+  --primary-color: rgba(156, 213, 56);
   --background-color: rgba(156, 213, 56, .15);
-  --callout-background: rgba(156, 213, 56, .08);
+  --callout-background: rgb(209, 250, 229); /* Orig: rgba(156, 213, 56, .08); */
   --primary-font: "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  --heading-font: "Wremena", "Times", "Times New Roman", serif;
+  --heading-font: "Neue Haas Unica Medium", "Times", "Times New Roman", serif;
   /* Set headings to large size by increasing :root em font size */
   /* Calc with vw makes font sizes intrinsically responsive */
-  font-size: calc(1.75em + 0.5vw);
+  font-size: calc(1.25em + 0.7vw);
   line-height: 1.7;
   letter-spacing: -0.015em;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +36,7 @@
 
 /* Reset non-headings to a smaller size while retaining visual rhythm */
 main>*>:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6), footer *, nav * {
-  font-size: .6rem;
+  font-size: .7rem;
 }
 
 /* Full bleed reset */
@@ -70,25 +85,34 @@ h1, h2, h3, h4, h5, h6 {
 
 h1:first-of-type {
   font-size: 200%;
-  line-height: 1;
+  line-height: .5;
 }
 
 h2+h3 {
-  margin-top: 0.25em;
+  margin-top: 0.25em; /* original 0.25 */
 }
-
+/*   was at beginning of list */
 h1+p, h2+p, h3+p {
-  margin-top: 0.25em;
+  margin-top: 0.15em;
 }
 
 h3 {
   font-weight: 400;
   font-size: 0.900rem;
 }
+/* 
+If the margin property has four values:
 
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+ */
 nav {
-  margin: 1em 0 3em
+  margin: .8em 0 3em
 }
+
 
 #notes-entry-container, main {
   display: grid;
@@ -100,7 +124,10 @@ nav {
 article {
   display: grid;
 }
-
+/* 
+GSW: This is how the two columns happen 
+more here https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column#try_it
+ */
 main section {
   grid-column: 1 / -1;
 }
@@ -607,4 +634,84 @@ div.highlight pre {
 
 .highlight .il {
   color: #009999
+}
+
+/* Header style from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header */
+/* Added by GSW */
+{box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1; /* original was #f1f1f1 */
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 10px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+/* END Header style */
+
+/* Trying to align images */
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+img.right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+img.left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

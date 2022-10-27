@@ -3,8 +3,12 @@ title: Your first seed
 category: Getting Started
 ---
 
-### Welcome!
+## Welcome!
 This is your first note. You'll find it in the `_notes/` directory. I recommend using [Obsidian](https://obsidian.md/) to edit Markdown files. Learn more about [[Obsidian Setup]], [[Site Organization]], and [[Note Formatting]]. 
+
+## This is Grant's New  Space
+[[GSW's New Note]]
+
 
 ### Link syntax
 

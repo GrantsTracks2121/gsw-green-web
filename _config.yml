@@ -1,9 +1,9 @@
-title: Green Web Template
+title: Sparks in the Dark
 url: "https://garden.megu.space"
 favicon: 🥬
 
 # https://jekyllrb.com/docs/configuration/options/
-timezone: America/Los_Angeles
+timezone: America/Edmonton
 
 # Comment out .htaccess if you're uploading to a non-Apache server such as Netlify
 include: [".htaccess"]
@@ -27,6 +27,13 @@ permalink: slug
 # Set to 'true' to generate excerpts for pages. Notes are technically pages.
 page_excerpts: true
 
+# Kramdown was changing straight quotation marks into curly. 
+# This https://stackoverflow.com/questions/25596792/how-do-i-turn-off-smart-quotes-in-jekyll#25597026
+# says that this should stop it from doing that
+# Suggested fix  smart_quotes: ["apos", "apos", "quot", "quot"]
+# This fix worked
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 plugins:
   - jekyll-last-modified-at
 
