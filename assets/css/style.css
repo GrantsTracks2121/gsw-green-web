@@ -173,12 +173,15 @@ header p {
   padding-bottom: 2em;
 }
 
+/* Original img class - always centered */
+
 img {
   width: 100%;
   display: block;
   margin: 0 auto;
   border-radius: 4px
 }
+
 
 blockquote {
   padding: 1.5em;
@@ -694,8 +697,9 @@ body {
 }
 /* END Header style */
 
-/* Trying to align images */
+/* GSW Trying to align images */
 
+/* 
 img.centered {
   display: block;
   margin-left: auto;
@@ -715,3 +719,75 @@ img.left {
   margin-left: auto;
   margin-right: auto;
 }
+ */
+
+/* GSW second try at aligning images */
+.align-right {
+    float: right;
+    margin-left: 15px; 
+    margin-bottom: 15px;     
+    border-radius: 8px;
+}
+
+.align-left {
+    float: left;
+    margin-right: 15px; 
+	margin-bottom: 15px;     
+    border-radius: 8px;
+}
+/* Sizing of images in percentage of space it takes up horizontally in the block */
+/* Recommend size 30, 40 or 50 for aligning left or right
+/* 60, 70, 80, 90 can be used with center alignment */
+
+
+.size30 {
+    display: block;
+	width: auto; 
+	height: auto; 
+	max-width: 30%;
+}
+
+.size40 {
+    display: block;
+	width: auto; 
+	height: auto; 
+	max-width: 40%;
+}
+
+.size50 {
+    display: block;
+	width: auto; 
+	height: auto; 
+	max-width: 50%;
+}
+
+.size60 {
+    display: block;
+	width: auto; 
+	height: auto; 
+	max-width: 60%;
+}
+
+.size70 {
+    display: block;
+	width: auto; 
+	height: auto; 
+	max-width: 70%;
+}
+
+.size80 {
+    display: block;
+	width: auto; 
+	height: auto; 
+	max-width: 80%;
+}
+.size90 {
+    display: block;
+	width: auto; 
+	height: auto; 
+	max-width: 90%;
+}
+
+
+
+

@@ -23,7 +23,7 @@ By default, Obsidian uses wikilinks, or double bracketed links. They look `[[lik
 This is not standard Markdown! So I wrote an update to the `bidirectional links generator` script that updates this to the proper HTML code. 
 
 Here's a test image to make sure my plugin is working:
-![[tom-wheatley-HdIb-5gRv7U-unsplash 1.jpg]]
+![[tom-wheatley-HdIb-5gRv7U-unsplash1.jpg]]
 
 Read more about my fix at [[Wiki Image Link Testing]]
 
