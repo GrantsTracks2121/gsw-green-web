@@ -8,7 +8,7 @@ This is your first note. You'll find it in the `_notes/` directory. I recommend 
 
 ## This is Grant's New  Space
 [[GSW's New Note]]
-
+[[There's a New Page on the Block]]
 
 ### Link syntax
 
