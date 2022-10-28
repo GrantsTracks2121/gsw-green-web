@@ -37,6 +37,26 @@ kramdown:
 plugins:
   - jekyll-last-modified-at
 
+imagemagick:
+  enabled: true
+  widths:
+    - 1500
+    - 750
+    - 0
+  input_directories:
+    - assets/images
+  input_formats:
+    - ".png"
+    - ".tiff"
+    - ".jpg"
+    - ".jpeg"
+  output_formats:
+    jpg: "-quality 93% -define jpeg:dct-method=float -strip -interlace Plane" 
+#    jpg: "-quality 93% -define jpeg:dct-method=float -strip -interlace Plane"
+#    webp: "-quality 100%"
+
+
+
 collections:
   notes:
     output: true

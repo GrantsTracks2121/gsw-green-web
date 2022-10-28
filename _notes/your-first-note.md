@@ -6,6 +6,10 @@ category: Getting Started
 ## Welcome!
 This is your first note. You'll find it in the `_notes/` directory. I recommend using [Obsidian](https://obsidian.md/) to edit Markdown files. Learn more about [[Obsidian Setup]], [[Site Organization]], and [[Note Formatting]]. 
 
+## Here are a bunch of large images
+[[Lots of large images]]
+
+
 ## This is Grant's New  Space
 [[GSW's New Note]]
 

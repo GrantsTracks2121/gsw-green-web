@@ -745,6 +745,8 @@ img.left {
 	width: auto; 
 	height: auto; 
 	max-width: 30%;
+	position: relative;
+    top: 8px;
 }
 
 .size40 {
@@ -752,6 +754,8 @@ img.left {
 	width: auto; 
 	height: auto; 
 	max-width: 40%;
+    position: relative;
+    top: 8px;
 }
 
 .size50 {
@@ -759,6 +763,8 @@ img.left {
 	width: auto; 
 	height: auto; 
 	max-width: 50%;
+	position: relative;
+    top: 8px;
 }
 
 .size60 {
@@ -766,6 +772,8 @@ img.left {
 	width: auto; 
 	height: auto; 
 	max-width: 60%;
+	position: relative;
+    top: 8px;
 }
 
 .size70 {
@@ -773,6 +781,8 @@ img.left {
 	width: auto; 
 	height: auto; 
 	max-width: 70%;
+	position: relative;
+    top: 8px;
 }
 
 .size80 {
@@ -780,12 +790,16 @@ img.left {
 	width: auto; 
 	height: auto; 
 	max-width: 80%;
+	position: relative;
+    top: 8px;
 }
 .size90 {
     display: block;
 	width: auto; 
 	height: auto; 
 	max-width: 90%;
+	position: relative;
+    top: 8px;
 }
 
 
